@@ -2,76 +2,75 @@ const caixaPrincipal = document.querySelector(".caixa-principal");
 const caixaPerguntas = document.querySelector(".caixa-perguntas");
 const caixaAlternativas = document.querySelector(".caixa-alternativas");
 const caixaResultado = document.querySelector(".caixa-resultado");
-const textoResultado = document.querySelector(".texto-resultado");
+const textoResultado = document.querySelector(".texto-resultado")
 
 const perguntas = [
     {
-        enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
+        enunciado: "Em um futuro próximo, a inteligência artificial se tornou onipresente. Ao acordar, seu assistente de IA te informa sobre as notícias do dia e sua agenda. Qual é a sua reação?",
         alternativas: [
             {
-                texto: "Isso é assustador!",
-                afirmacao: "afirmação"
+                texto: "Que ótimo! Mal posso esperar para ver como a IA vai simplificar ainda mais minha vida.",
+                afirmacao: "Com o tempo, você se adaptou completamente à conveniência da IA, integrando-a em todas as áreas do seu cotidiano."
             },
             {
-                texto: "Isso é maravilhoso!",
-                afirmacao: "afirmação"
+                texto: "Me sinto um pouco desconfortável com tanta dependência da tecnologia.",
+                afirmacao: "Você passou a questionar os limites da autonomia humana em um mundo cada vez mais mediado por algoritmos."
             }
         ]
     },
     {
-        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial, uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre esta tecnologia. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de IA em sala de aula. Qual atitude você toma?",
+        enunciado: "Sua escola implementou um novo sistema de aprendizado adaptativo, onde a IA personaliza o conteúdo e o ritmo das aulas para cada aluno. Como você se sente sobre isso?",
         alternativas: [
             {
-                texto: "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
-                afirmacao: "afirmação"
+                texto: "Isso é incrível! Finalmente um ensino que se adapta às minhas necessidades.",
+                afirmacao: "Seu desempenho acadêmico disparou, e você se tornou um entusiasta do ensino personalizado por IA."
             },
             {
-                texto: "Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
-                afirmacao: "afirmação"
+                texto: "Tenho receio de que isso diminua a interação humana e a criatividade.",
+                afirmacao: "Você buscou ativamente atividades que promoviam a colaboração e o pensamento crítico, valorizando as conexões humanas."
             }
         ]
     },
     {
-        enunciado: "Após a elaboração do trabalho escrito, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
+        enunciado: "No trabalho, um colega sugere usar uma IA avançada para automatizar uma tarefa complexa que levaria dias para ser concluída manualmente. Qual sua postura?",
         alternativas: [
             {
-                texto: "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-                afirmacao: "afirmação"
+                texto: "Excelente ideia! Vamos otimizar nosso tempo e focar em tarefas mais estratégicas.",
+                afirmacao: "A eficiência no seu trabalho aumentou drasticamente, e você se tornou um defensor da automação inteligente."
             },
             {
-                texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
-                afirmacao: "afirmação"
+                texto: "Prefiro fazer manualmente para garantir a precisão e entender cada etapa do processo.",
+                afirmacao: "Você se dedicou a aprimorar suas próprias habilidades, buscando um diferencial humano em um cenário cada vez mais automatizado."
             }
         ]
     },
     {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
+        enunciado: "Um novo aplicativo de realidade aumentada permite que você interaja com personagens históricos em sua casa. Você decide experimentar. O que mais te impressiona?",
         alternativas: [
             {
-                texto: "Criar uma imagem utilizando uma plataforma de design como o Paint.",
-                afirmacao: "afirmação"
+                texto: "A riqueza de detalhes e o realismo da interação me fazem sentir que estou realmente viajando no tempo.",
+                afirmacao: "Sua paixão por história se aprofundou, e você usou a realidade aumentada para explorar diferentes épocas e culturas."
             },
             {
-                texto: "Criar uma imagem utilizando um gerador de imagem de IA.",
-                afirmacao: "afirmação"
+                texto: "A forma como a IA consegue simular a personalidade e o conhecimento dos personagens é fascinante.",
+                afirmacao: "Você começou a estudar a ética e os limites da criação de inteligências artificiais com consciência e personalidade."
             }
         ]
     },
     {
-        enunciado: "Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda da IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz? ",
+        enunciado: "Você está em um encontro social e a conversa se volta para o futuro da sociedade com a IA. Como você contribui para o debate?",
         alternativas: [
             {
-                texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
-                afirmacao: "afirmação"
+                texto: "Acredito que a IA trará uma era de prosperidade sem precedentes, resolvendo muitos dos problemas atuais da humanidade.",
+                afirmacao: "Você se tornou um otimista quanto ao futuro, compartilhando sua visão de um mundo impulsionado pela inovação e tecnologia."
             },
             {
-                texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
-                afirmacao: "afirmação"
+                texto: "É crucial que desenvolvamos a IA com responsabilidade, garantindo que ela sirva à humanidade e não o contrário.",
+                afirmacao: "Você se envolveu em discussões sobre regulamentação e ética da IA, defendendo um futuro mais justo e seguro para todos."
             }
         ]
-    },
+    }
 ];
-
 
 let atual = 0;
 let perguntaAtual;
