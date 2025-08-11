@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Você decide o futuro da IA</title>
+    <title>A Psicologia e Você</title>
 </head>
 <body>
     <div class="caixa-principal">
-        <h1>Você decide o futuro da IA</h1>
-        <div class="caixa-perguntas"></div>
-        <div class="caixa-alternativas"></div>
+        <h1>Entenda sua mente com a Psicologia</h1>
+        <div class="caixa-perguntas">
+            <p>Como você se sente hoje?</p>
+        </div>
+        <div class="caixa-alternativas">
+            <button onclick="mostrarResultado('feliz')">Feliz</button>
+            <button onclick="mostrarResultado('ansioso')">Ansioso</button>
+            <button onclick="mostrarResultado('triste')">Triste</button>
+            <button onclick="mostrarResultado('neutro')">Neutro</button>
+        </div>
         <div class="caixa-resultado">
             <p class="texto-resultado"></p>
         </div>
