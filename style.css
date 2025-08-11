@@ -1,10 +1,9 @@
 :root{
-    --cor-fundo: #01080E; /* Dark florest green */
-    --cor-principal: #0B0D20 ;/* Muted green*/
-    --cor-secundaria: #212333; /* Olive green/brown */
-    --cor-destaque: #2BDEFD;/* Muted gold/orange */
-    --cor-texto: #D7F9FF;/* off-white/cream */
-
+    --cor-fundo: #1A2B3C; /* Cor escura para criar um ambiente introspectivo */
+    --cor-principal: #283D49 ;/* Azul profundo para representar reflexão */
+    --cor-secundaria: #A4B8C4; /* Cor suave e calmante */
+    --cor-destaque: #FF8C42;/* Laranja vibrante para trazer atenção */
+    --cor-texto: #E6F0F5;/* Tom claro para facilitar a leitura */
 }
 
 body {
@@ -14,6 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    font-family: 'Arial', sans-serif;
 }
 
 .caixa-principal{
@@ -22,10 +22,13 @@ body {
     max-width: 600px;
     text-align: center;
     padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 }
 
 h1{
     color: var(--cor-destaque);
+    font-size: 2em;
 }
 
 button {
@@ -34,6 +37,9 @@ button {
     border: none;
     border-radius: 15px;
     padding: 15px;
+    margin: 10px;
+    width: 80%;
+    cursor: pointer;
     transition: background-color 0.3s;
 }
 
@@ -41,6 +47,16 @@ button:hover{
     background-color: var(--cor-destaque);
     color: var(--cor-principal);
 }
+
+.caixa-resultado {
+    margin-top: 20px;
+}
+
+.texto-resultado {
+    font-size: 1.2em;
+    color: var(--cor-texto);
+}
+
 
 
 
